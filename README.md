@@ -2,11 +2,11 @@
 
 Poll based social media website. Create, Share, Vote and Debate Polls.
 
+Deployed at https://interpoll.netlify.app/
+
 ![alt text][image]
 
 [image]: https://i.imgur.com/ECYCxkN.png "Website Image"
-
-Deployed at https://interpoll.netlify.app/
 
 Backend deployed with [heroku](https://www.heroku.com)
 
@@ -48,8 +48,9 @@ To install dependencies run `npm run install`
 In order to run the application you need to edit the `server/.env` file which stores the environment variables.
 You need a mongodb uri and jwt token to run the application, the port is optional.
 
-Edit the `client/src/index.js` file.
+Edit the `client/src/index.js` file and fill in your backend url as indicated by the `YOUR_BACKEND_URL_HERE` string. By default the url is http://localhost:5000, however you may change this if you used a different port.
 
+To run the application run `npm run start`. This will open the application in your web brower.
 
 # Warning
 This is a sample website. <br/>
