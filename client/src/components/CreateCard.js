@@ -2,14 +2,11 @@ import React, { useState } from 'react';
 import { Button, IconButton } from '@material-ui/core';
 import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
-import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 import auth from '../auth/auth';
 
 function CreateCard(props) {
   const [errorMessage, setErrorMessage] = useState('');
-  const [redirect, setRedirect] = useState(false);
-  const [redirectUrl, setRedirectUrl] = useState('');
 
   function handleDelete() {
     props.setPollOptions(props.pollOptions.slice(0, -1));
@@ -62,7 +59,7 @@ function CreateCard(props) {
         axios
           .post('/api/poll/create', request)
           .then((response) => {
-            setRedirectUrl('/poll/' + response.data.pollId);
+            document.location.href = '/poll/' + response.data.pollId;
             return <h2>Success! Redirecting...</h2>;
           })
           .catch((err) => setErrorMessage(err.response.data.error));
@@ -76,7 +73,7 @@ function CreateCard(props) {
             },
           })
           .then(() => {
-            setRedirectUrl('/poll/' + props.poll._id);
+            document.location.href = '/poll/' + props.poll._id;
             return <h2>Success! Redirecting...</h2>;
           })
           .catch((err) => setErrorMessage(err.response.data.error));
@@ -85,10 +82,6 @@ function CreateCard(props) {
       default:
         break;
     }
-  }
-
-  if (redirect) {
-    return <Redirect to={redirectUrl} />;
   }
 
   return (
