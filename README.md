@@ -32,8 +32,8 @@ Creating an account allows you to:
   - edit and delete your comments
 
 
-NOTE: This is a sample website. 
-DO NOT USE ENTER A PERSONAL PASSWORD WHEN REGISTERING FOR AN ACCOUNT.
-THE DATABASE CAN BE ACCESSED FROM ALL SOURCES.
+NOTE: This is a sample website. <br/>
+DO NOT USE ENTER A PERSONAL PASSWORD WHEN REGISTERING FOR AN ACCOUNT.<br/>
+THE DATABASE CAN BE ACCESSED FROM ALL SOURCES.<br/>
 
 
