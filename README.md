@@ -43,4 +43,5 @@ This is a sample website. <br/>
 DO NOT USE ENTER A PERSONAL PASSWORD WHEN REGISTERING FOR AN ACCOUNT.<br/>
 THE DATABASE CAN BE ACCESSED FROM ALL SOURCES.<br/>
 
-
+# License 
+[License](https://github.com/menghaoyu2002/interpoll/blob/main/LICENSE)
