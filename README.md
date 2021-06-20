@@ -19,6 +19,31 @@ This website was built with the mern stack
 - mongodb database
 
 # Features
-- Create polls
+- Create polls annonymously
+- Vote for polls annonymously
+- View poll results 
+- Create an account
+- use of JWTs to authenticate user
+
+Creating an account allows you to:
+  - comment on polls
+  - view your vote history, comment history, created polls
+  - edit an delete your polls 
+  - edit and delete your comments
+  - edit your accounts settings
+  - delete your account
 
 
+# Possible Improvemnts
+- refactor UserProfile page
+- use more components over longer components (maybe)
+- add better security (don't put jwt in sessionStorage)
+- JWTs expire when page is closed, this can be quite annoying since opening a link in a new tab can log you out. Should use cookies for JWTs instead
+
+# Warning
+This is a sample website. <br/>
+DO NOT USE ENTER A PERSONAL PASSWORD WHEN REGISTERING FOR AN ACCOUNT.<br/>
+THE DATABASE CAN BE ACCESSED FROM ALL SOURCES.<br/>
+
+# License 
+[License](https://github.com/menghaoyu2002/interpoll/blob/main/LICENSE)
