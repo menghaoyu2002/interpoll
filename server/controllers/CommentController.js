@@ -51,14 +51,15 @@ exports.deleteComment = async function (req, res, next) {
     let index = author.commentHistory.findIndex((pastComment) => {
       return comment.equals(pastComment);
     });
-    console.log(index, author.commentHistory);
+
     author.commentHistory.splice(index, 1);
     author.save();
 
     comment.body = 'Comment Deleted by author';
     comment.authorName = 'Deleted';
-    comment.save();
-    return res.send('comment successfully deleted');
+    comment.save(() => {
+      return res.send('comment successfully deleted');
+    });
   } catch (err) {
     return next(err);
   }
