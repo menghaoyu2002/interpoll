@@ -37,7 +37,7 @@ app.use('/api/poll', pollRouter);
 app.use('/api/user', userRouter);
 app.use('/api/comment', commentRouter);
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', 3000);
 
 app.listen(app.get('port'), (err) => {
   if (err) {

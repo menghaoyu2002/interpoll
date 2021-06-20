@@ -141,20 +141,21 @@ export default function CommentCard(props) {
             {comment.replies.length}
           </IconButton>
         </div>
-        {comment.authorName === isAuthenticated.user.username && (
-          <span>
-            <div>
-              <IconButton onClick={handleDelete}>
-                <DeleteIcon color="secondary" />
-              </IconButton>
-            </div>
-            <div>
-              <IconButton onClick={() => setIsEditing(!isEditing)}>
-                <EditIcon color="primary" />
-              </IconButton>
-            </div>
-          </span>
-        )}
+        {isAuthenticated &&
+          comment.authorName === isAuthenticated.user.username && (
+            <span>
+              <div>
+                <IconButton onClick={handleDelete}>
+                  <DeleteIcon color="secondary" />
+                </IconButton>
+              </div>
+              <div>
+                <IconButton onClick={() => setIsEditing(!isEditing)}>
+                  <EditIcon color="primary" />
+                </IconButton>
+              </div>
+            </span>
+          )}
       </div>
 
       <Reply comment={comment} writeReply={writeReply} />

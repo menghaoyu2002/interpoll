@@ -14,7 +14,9 @@ let key = 0;
 export default function PollCard(props) {
   const currentUser = auth.isAuthenticated();
   const isAuthor =
-    currentUser && currentUser.user._id === props.poll.author._id;
+    currentUser &&
+    props.poll.author &&
+    currentUser.user._id === props.poll.author._id;
   const [syntheticVote, setSyntheticVote] = useState('');
   const [showResults, setShowResults] = useState(false);
   const poll = props.poll;
