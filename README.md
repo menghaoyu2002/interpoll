@@ -30,6 +30,12 @@ Creating an account allows you to:
   - edit an delete your polls 
   - edit and delete your comments
 
+
+# Possible Improvemnts
+- refactor UserProfile page
+- use more components over longer components (maybe)
+- add better security (don't put jwt in sessionStorage)
+
 # NOTE
 This is a sample website. <br/>
 DO NOT USE ENTER A PERSONAL PASSWORD WHEN REGISTERING FOR AN ACCOUNT.<br/>
