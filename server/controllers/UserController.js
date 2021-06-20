@@ -74,7 +74,7 @@ exports.deleteUser = async function (req, res, next) {
     user.commentHistory.forEach(async (commentId) => {
       let comment = await Comment.findById(commentId);
       comment.body = 'User Deleted';
-      comment.author = 'Deleted';
+      comment.authorName = 'Deleted User';
       comment.save();
     });
 
