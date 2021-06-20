@@ -36,6 +36,7 @@ Creating an account allows you to:
 - refactor UserProfile page
 - use more components over longer components (maybe)
 - add better security (don't put jwt in sessionStorage)
+- JWTs expire when page is closed, this can be quite annoying since opening a link in a new tab can log you out. Should use cookies for JWTs instead
 
 # NOTE
 This is a sample website. <br/>
