@@ -1,5 +1,5 @@
 var expressJwt = require('express-jwt');
-require('dotenv').config({ path: './config.env' });
+require('dotenv').config();
 
 exports.requireSignin = expressJwt({
   secret: process.env.JWT_SECRET,

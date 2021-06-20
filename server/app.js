@@ -1,3 +1,4 @@
+require('dotenv').config();
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -12,7 +13,6 @@ var commentRouter = require('./routes/comments');
 var app = express();
 
 // Set up mongoose connection
-require('dotenv').config({ path: './config.env' });
 var mongoose = require('mongoose');
 mongoose.connect(
   process.env.MONGODB_URI,
