@@ -9,8 +9,9 @@ export default function formatTimeDifference(uploadDate) {
     if (timeDifference < 1) {
       timeDifference = timeDifference * 60;
       timeFormatted = Math.floor(timeDifference) + ' second';
+    } else {
+      timeFormatted = Math.floor(timeDifference) + ' minute';
     }
-    timeFormatted = Math.floor(timeDifference) + ' minute';
   } else if (timeDifference < 24) {
     timeFormatted = Math.floor(timeDifference) + ' hour';
   } else {
