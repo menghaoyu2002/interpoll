@@ -1,0 +1,29 @@
+.ShowMore {
+  width: 100%;
+  padding: 4em;
+  margin: auto;
+}
+
+.ShowMore > h2 {
+  margin-bottom: 0.75em;
+  font-size: 2.5rem;
+}
+
+.DataContainer > ul {
+  list-style-type: none;
+  width: 100%;
+  margin: auto;
+  margin-top: 1em;
+  margin-left: -1em;
+}
+
+@media screen and (max-width: 500px) {
+  .ShowMore {
+    padding: 0.5em;
+  }
+
+  .ShowMore > h2 {
+    padding-top: 3em;
+    font-size: 1.5rem;
+  }
+}

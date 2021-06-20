@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@600&display=swap');
+
+.TopNavBarLinkContainer {
+  display: inline-block;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  position: sticky;
+  background-color: white;
+}
+
+.Container {
+  width: 100%;
+  font-size: 0;
+  position: fixed;
+  display: block;
+  z-index: 99999;
+}
+
+.SiteName {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+.NavLink {
+  margin: 0.5em;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.LoginLinks {
+  padding: 0.5em;
+  font-size: 1rem;
+  margin-right: 1em;
+  float: right;
+}
+
+.user {
+  font-weight: 500;
+  border: none;
+  padding: 0.5em 2em;
+  border-radius: 0.2em;
+  border: solid 0.075em black;
+  background-color: transparent;
+  transition: background-color 0.2s;
+  font-weight: 500;
+}
+
+.UserDrawer {
+  margin: 0 1em;
+  word-wrap: break-word;
+  float: right;
+  font-size: 1rem;
+  overflow: auto;
+  padding-right: 1em;
+  max-height: 80vh;
+}
+.UserDrawer::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.UserDrawer a {
+  text-decoration: none;
+  color: black;
+}
+
+.user:hover {
+  background-color: #00000010;
+}
+
+.CloseMenuButton {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 500px) {
+  .SiteName {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .LoginLinks {
+    display: flex;
+    margin: auto;
+    width: 100%;
+  }
+
+  .NavLink {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-left: 0.5em;
+  }
+}

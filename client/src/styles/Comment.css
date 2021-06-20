@@ -1,0 +1,30 @@
+.CommentBody {
+  padding-top: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.CommentBody li {
+  list-style-type: none;
+}
+
+.CommentStats {
+  display: flex;
+}
+
+.CommentStats span {
+  display: flex;
+}
+.Reply {
+  width: 100%;
+  margin: 1em 0 0 0;
+}
+
+.CommentContainer {
+  margin-bottom: 1em;
+  padding: 2em;
+}
+.FormElements {
+  margin-bottom: 1em;
+}

@@ -1,0 +1,35 @@
+.Login {
+  width: 50%;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding: 1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Login a {
+  text-decoration: none;
+}
+
+.Login input {
+  margin-bottom: 1em;
+}
+
+.Login p {
+  margin-top: 1em;
+  color: red;
+}
+.Login Button {
+  margin-top: 1em;
+}
+
+.Redirect {
+  text-align: center;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 500px) {
+  .Login {
+    width: 90%;
+  }
+}

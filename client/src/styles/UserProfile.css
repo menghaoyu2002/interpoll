@@ -1,0 +1,64 @@
+.UserStats {
+  width: 50%;
+  margin: auto;
+  list-style-type: none;
+  word-wrap: break-word;
+}
+
+.UserStats ul {
+  margin-top: 1em;
+  list-style-type: none;
+}
+
+.UserName {
+  text-align: center;
+  margin: 2em 0;
+  font-size: 4rem;
+}
+
+.EmptyMessage {
+  width: 100%;
+  text-align: center;
+  margin-top: 15vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.PageUp {
+  position: fixed;
+  top: 90vh;
+  left: 90vw;
+  border-radius: 100%;
+  outline: solid;
+  width: 4vh;
+  height: 4vh;
+  border: none;
+  background-color: #3700b3;
+}
+
+.VoteCard {
+  padding: 2em;
+  margin-bottom: 1%;
+  display: flex;
+  align-items: center;
+}
+
+.VoteCard li {
+  list-style-type: none;
+}
+
+.VoteCard a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .UserStats {
+    width: 90vw;
+  }
+
+  .AppBar button {
+    font-size: 2.5vmin;
+  }
+}

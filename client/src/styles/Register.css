@@ -1,0 +1,32 @@
+.Register {
+  width: 50%;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding: 1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Register input {
+  margin-bottom: 1em;
+}
+
+.SubmitButton {
+  color: #f50057;
+  border: 0.05em solid #f73378;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  background-color: transparent;
+  transition: background-color 0.2s;
+  font-weight: 500;
+}
+
+.SubmitButton:hover {
+  background-color: #d8afaf52;
+}
+
+@media screen and (max-width: 500px) {
+  .Register {
+    width: 90%;
+  }
+}
