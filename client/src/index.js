@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://interpoll-backend.herokuapp.com';
+axios.defaults.baseURL = 'YOUR_BACKEND_URL_HERE';
 
 ReactDOM.render(
   <React.StrictMode>
