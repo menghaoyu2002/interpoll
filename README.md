@@ -24,13 +24,11 @@ This website was built with the mern stack
 - View poll results 
 - Create an account
 
-
 Creating an account allows you to:
   - comment on polls
   - view your vote history, comment history, created polls
   - edit an delete your polls 
   - edit and delete your comments
-
 
 # NOTE
 This is a sample website. <br/>
