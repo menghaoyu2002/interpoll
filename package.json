@@ -1,0 +1,27 @@
+{
+  "name": "interpoll",
+  "version": "1.0.0",
+  "description": "Poll based social media website. Create, Share, Vote and Debate Polls.",
+  "main": "index.js",
+  "scripts": {
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "start-server": "cd server && npm start",
+    "start-client": "cd client && npm start",
+    "install": "concurrently \"npm run install-client\" \"npm run install-server\"",
+    "start": "concurrently \"npm run start-server\" \" npm run start-client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menghaoyu2002/interpoll.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/menghaoyu2002/interpoll/issues"
+  },
+  "homepage": "https://github.com/menghaoyu2002/interpoll#readme",
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
