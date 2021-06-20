@@ -30,6 +30,8 @@ Creating an account allows you to:
   - view your vote history, comment history, created polls
   - edit an delete your polls 
   - edit and delete your comments
+  - edit your accounts settings
+  - delete your account
 
 
 # Possible Improvemnts
