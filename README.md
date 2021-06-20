@@ -50,7 +50,7 @@ You need a mongodb uri and jwt token to run the application, the port is optiona
 
 Edit the `client/src/index.js` file and fill in your backend url as indicated by the `YOUR_BACKEND_URL_HERE` string. By default the url is http://localhost:5000, however you may change this if you used a different port.
 
-To run the application run `npm run start`. This will open the application in your web brower.
+To run the application run `npm run start`. This will open the application in your web brower. If the application does not open the url for the webpage can be found in the terminal.
 
 # Warning
 This is a sample website. <br/>
