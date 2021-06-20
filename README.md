@@ -54,8 +54,8 @@ To run the application run `npm run start`. This will open the application in yo
 
 # Warning
 This is a sample website. <br/>
-DO NOT USE ENTER A PERSONAL PASSWORD WHEN REGISTERING FOR AN ACCOUNT.<br/>
-THE DATABASE CAN BE ACCESSED FROM ALL SOURCES.<br/>
+***DO NOT USE ENTER A PERSONAL PASSWORD WHEN REGISTERING FOR AN ACCOUNT.
+THE DATABASE CAN BE ACCESSED FROM ALL SOURCES.***
 
 # License 
 [License](https://github.com/menghaoyu2002/interpoll/blob/main/LICENSE)
