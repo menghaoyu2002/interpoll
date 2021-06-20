@@ -37,15 +37,6 @@ app.use('/api/poll', pollRouter);
 app.use('/api/user', userRouter);
 app.use('/api/comment', commentRouter);
 
-app.set('port', 3000);
-
-app.listen(app.get('port'), (err) => {
-  if (err) {
-    console.log(err);
-  }
-  console.info('Server started on port %s.', app.get('port'));
-});
-
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
