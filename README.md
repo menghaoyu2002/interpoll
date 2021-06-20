@@ -1,7 +1,24 @@
 # Interpoll - The Internet Poll
 
-Poll based social media website.
+Poll based social media website. Create, Share, Vote and Debate Polls.
 
-Still in development
+![alt text][image]
 
-![image Info](https://blog.cdn.own3d.tv/resize=fit:crop,height:400,width:600/BoYRMteyQBOo9hgM2TO0)
+[image]: https://i.imgur.com/ECYCxkN.png "Website Image"
+
+Deployed at https://interpoll.netlify.app/
+
+Backend deployed with [heroku](https://www.heroku.com)
+
+Frontend deployed with [netlify](https://www.netlify.com/)
+
+# Tech stack
+This website was built with the mern stack
+- frontend built with react
+- backend built with express + node 
+- mongodb database
+
+# Features
+- Create polls
+
+
