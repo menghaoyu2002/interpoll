@@ -46,8 +46,9 @@ First run `npm install` then you will have access to the following commands.
 To install dependencies run `npm run install`
 
 In order to run the application you need to edit the `server/.env` file which stores the environment variables.
-
 You need a mongodb uri and jwt token to run the application, the port is optional.
+
+Edit the `client/src/index.js` file.
 
 
 # Warning
