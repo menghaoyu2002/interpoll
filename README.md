@@ -23,6 +23,7 @@ This website was built with the mern stack
 - Vote for polls annonymously
 - View poll results 
 - Create an account
+- use of JWTs to authenticate user
 
 Creating an account allows you to:
   - comment on polls
