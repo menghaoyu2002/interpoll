@@ -18,4 +18,7 @@ This website was built with the mern stack
 - backend built with express + node 
 - mongodb database
 
+# Features
+- Create polls
+
 
