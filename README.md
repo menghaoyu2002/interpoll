@@ -33,12 +33,20 @@ Creating an account allows you to:
   - edit your accounts settings
   - delete your account
 
-
 # Possible Improvemnts
 - refactor UserProfile page
 - use more components over longer components (maybe)
 - add better security (don't put jwt in sessionStorage)
 - JWTs expire when page is closed, this can be quite annoying since opening a link in a new tab can log you out. Should use cookies for JWTs instead
+
+# Installation and Setup
+
+First run `npm install` then you will have access to the following commands.
+
+To install dependencies run `npm run install`
+
+In order to run the application you need a `.env` file which stores the environment variables.
+
 
 # Warning
 This is a sample website. <br/>
