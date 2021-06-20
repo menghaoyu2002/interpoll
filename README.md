@@ -28,6 +28,12 @@ This website was built with the mern stack
 Creating an account allows you to:
   - comment on polls
   - view your vote history, comment history, created polls
-  - edit an delete existing polls 
+  - edit an delete your polls 
+  - edit and delete your comments
+
+
+NOTE: This is a sample website. 
+DO NOT USE ENTER A PERSONAL PASSWORD WHEN REGISTERING FOR AN ACCOUNT.
+THE DATABASE CAN BE ACCESSED FROM ALL SOURCES.
 
 
