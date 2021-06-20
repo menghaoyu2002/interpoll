@@ -38,7 +38,7 @@ Creating an account allows you to:
 - add better security (don't put jwt in sessionStorage)
 - JWTs expire when page is closed, this can be quite annoying since opening a link in a new tab can log you out. Should use cookies for JWTs instead
 
-# NOTE
+# Warning
 This is a sample website. <br/>
 DO NOT USE ENTER A PERSONAL PASSWORD WHEN REGISTERING FOR AN ACCOUNT.<br/>
 THE DATABASE CAN BE ACCESSED FROM ALL SOURCES.<br/>
