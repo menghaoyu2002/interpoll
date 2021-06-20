@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button, IconButton } from '@material-ui/core';
 import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
+import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 import auth from '../auth/auth';
 
@@ -59,8 +60,7 @@ function CreateCard(props) {
         axios
           .post('/api/poll/create', request)
           .then((response) => {
-            document.location.href = '/poll/' + response.data.pollId;
-            return <h2>Success! Redirecting...</h2>;
+            return <Redirect to={'/poll/' + response.data.pollId} />;
           })
           .catch((err) => setErrorMessage(err.response.data.error));
         break;
