@@ -19,6 +19,15 @@ This website was built with the mern stack
 - mongodb database
 
 # Features
-- Create polls
+- Create polls annonymously
+- Vote for polls annonymously
+- View poll results 
+- Create an account
+
+
+Creating an account allows you to:
+  - comment on polls
+  - view your vote history, comment history, created polls
+  - edit an delete existing polls 
 
 
