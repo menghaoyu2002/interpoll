@@ -32,10 +32,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 
-app.use('/api/home', homeRouter);
-app.use('/api/poll', pollRouter);
-app.use('/api/user', userRouter);
-app.use('/api/comment', commentRouter);
+app.use('/home', homeRouter);
+app.use('/poll', pollRouter);
+app.use('/user', userRouter);
+app.use('/comment', commentRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
