@@ -39,6 +39,7 @@ Creating an account allows you to:
 - add better security (don't put jwt in sessionStorage)
 - JWTs expire when page is closed, this can be quite annoying since opening a link in a new tab can log you out. Should use cookies for JWTs instead
 - There is a bit of delay on delete operations, which results in a unsatisfactory user experience.
+- deleting a comment sometimes requires the user to click the delete button twice.
 
 # Installation and Setup
 
