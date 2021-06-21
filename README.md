@@ -38,6 +38,7 @@ Creating an account allows you to:
 - use more components over longer components (maybe)
 - add better security (don't put jwt in sessionStorage)
 - JWTs expire when page is closed, this can be quite annoying since opening a link in a new tab can log you out. Should use cookies for JWTs instead
+- There is a bit of delay on delete operations, which results in a unsatisfactory user experience.
 
 # Installation and Setup
 
