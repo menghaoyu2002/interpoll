@@ -75,8 +75,9 @@ exports.editComment = async function (req, res, next) {
         .json({ error: 'User is not authorized to edit this comment' });
     }
     comment.body = req.body.revisedComment;
-    comment.save();
-    return res.send('comment successfully revised');
+    comment.save().then(() => {
+      return res.send('comment successfully revised');
+    });
   } catch (err) {
     return next(err);
   }
@@ -96,11 +97,11 @@ exports.reply = async function (req, res, next) {
     author.commentHistory.push(newComment);
     parentComment.replies.push(newComment);
 
-    author.save();
-    parentComment.save();
-    newComment.save();
-
-    return res.send('Success');
+    Promise.all([author.save(), parentComment.save(), newComment.save()]).then(
+      () => {
+        return res.send('Success');
+      }
+    );
   } catch (err) {
     return next(err);
   }
