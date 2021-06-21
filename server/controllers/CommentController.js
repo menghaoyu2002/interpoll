@@ -32,9 +32,9 @@ exports.postRootComment = [
       poll.comments.push(comment);
 
       commentAuthor.save();
-      comment.save();
-      poll.save();
-      return res.send();
+      Promise.all([comment.save(), poll.save()]).then(() => {
+        return res.send();
+      });
     } catch (err) {
       return next(err);
     }
