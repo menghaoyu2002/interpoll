@@ -53,11 +53,11 @@ exports.deleteComment = async function (req, res, next) {
     });
 
     author.commentHistory.splice(index, 1);
-    author.save();
 
     comment.body = 'Comment Deleted by author';
     comment.authorName = 'Deleted';
-    comment.save(() => {
+
+    Promise.all([author.save(), comment.save()]).then(() => {
       return res.send('comment successfully deleted');
     });
   } catch (err) {
