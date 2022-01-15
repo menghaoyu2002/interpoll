@@ -12,6 +12,8 @@ Backend deployed with [heroku](https://www.heroku.com)
 
 Frontend deployed with [netlify](https://www.netlify.com/)
 
+*Note*: You may have to wait a few seconds for the backend to "wake up" or load. This is because the backend is hosted on a Heroku free tier server, so it goes to sleep after inactivity.
+
 # Tech stack
 This website was built with the mern stack
 - frontend built with react
