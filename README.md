@@ -52,7 +52,7 @@ To install dependencies run `npm run install`
 In order to run the application you need to create a `.env` file in the `server` directory. In this `.env` file you need to define the following:
 1. `MONGODB_URI=<YOUR_URL_HERE>`: This is the link to your database
 2. `JWT_SECRET=<YOUR_JWT_SECRET_HERE>`: This is the JWT server used to encrypt JWT tokens.
-3. Opional: `PORT=<YOUR_PORT_HERE>`: This is the port your backend server runs on.
+3. Optional: `PORT=<YOUR_PORT_HERE>`: This is the port your backend server runs on.
 
 Edit the `client/src/index.js` file and fill in your backend url as indicated by the `YOUR_BACKEND_URL_HERE` string. By default the url is http://localhost:5000, however you may change this if you used a different port.
 
